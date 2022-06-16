@@ -1,16 +1,19 @@
 # [Flipper Zero Firmware](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/ReadMe.md) <= READ THIS READ ME
 - ****This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.**
 - FLASH STOCK FIRST BEFORE UPDATING TO CUSTOM FIRMWARE
+- If you brick your flipper with this shit, just flash it back to stock via the mobile app.
 - BUILD WITH COMPACT FLAG SINCE IT IS TOO LARGE
 - CH0NG, CH33CH and N00BY rename your flipper.
 
-# Clone the Repository
+# To customize this build
 
 You should clone with 
 ```shell
-$ git clone --recursive https://github.com/RogueMaster/flipperzero-firmware-wPlugins.git
+$ git clone --recursive https://github.com/NoDataFound/FlipperZero.HaKCed.git
 $ docker-compose up -d
-$ docker-compose exec dev make DEBUG=0 COMPACT=1
+# If you change or modify images, do not add the COMPACT flag the first build, you can speed it up after the first one.
+$ docker-compose exec dev make
+#$ docker-compose exec dev make DEBUG=0 COMPACT=1
 ```
 
 Latest Updates:
